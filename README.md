@@ -1,51 +1,54 @@
-# online-text-editor
+# Online / Offline Text Editor
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+## Description
+Using this application, you can create and edit text files. You can also download the application and use it offline. Any changes you make will be saved to the database and updated when you go back online. This application is able to do this by using IndexedDB, which is a way for browsers to store data locally. This application also uses a service worker, which is a script that runs in the background and manages caching for an application. Webpack configurations are also used to bundle the application for production. This application is deployed on Heroku, and you can access it through this link: [Online / Offline Text Editor](https://online-text-editor-9f097097b33f.herokuapp.com/)
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contribution](#contribution)
+* [Screenshots](#screenshots)
+* [License](#license)
+* [Questions](#questions)
 
 
-## Acceptance Criteria
+## Installation
+To have this application on your own system, `git clone` the repository and set it up in your local system. Ex (Vs Code).
+You will need to run `npm install` which will install the necessary package dependencies;
+* Once all the dependencies are installed, you will need to run the schema.sql file in mysql to create the database. 
+## Usage
+In order to run the program, after obtaining all of the dependencies you will need to run;
+* `npm run build` : this will build the application and let you access it in your local host.
+* The application is also deployed on Heroku, and you can access it through this link: [Online-Text-Editor: Heroku](https://online-text-editor-9f097097b33f.herokuapp.com/)
+* Application link to github repository: [Online-Text-Editor: GitHub](https://github.com/Blossomswilts/online-text-editor)
+* You can also download the application offline on the application interface. (install) Any changes you make will be saved to the database and updated when you go back online.
 
-```md
-GIVEN a text editor web application
-WHEN I open my application in my editor
-THEN I should see a client server folder structure
-WHEN I run `npm run start` from the root directory
-THEN I find that my application should start up the backend and serve the client
-WHEN I run the text editor application from my terminal
-THEN I find that my JavaScript files have been bundled using webpack
-WHEN I run my webpack plugins
-THEN I find that I have a generated HTML file, service worker, and a manifest file
-WHEN I use next-gen JavaScript in my application
-THEN I find that the text editor still functions in the browser without errors
-WHEN I open the text editor
-THEN I find that IndexedDB has immediately created a database storage
-WHEN I enter content and subsequently click off of the DOM window
-THEN I find that the content in the text editor has been saved with IndexedDB
-WHEN I reopen the text editor after closing it
-THEN I find that the content in the text editor has been retrieved from our IndexedDB
-WHEN I click on the Install button
-THEN I download my web application as an icon on my desktop
-WHEN I load my web application
-THEN I should have a registered service worker using workbox
-WHEN I register a service worker
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
-WHEN I deploy to Heroku
-THEN I should have proper build scripts for a webpack application
-::: TO BE DELETED WHEN COMPLETED :::
-```
+## Contribution
+If you would like to contribute to this project, and improve it in your own way(s), please do the following:
+- `Fork` the repository on GitHub
+- `Clone` the project onto your own machine (such as VsCode)
+- `Commit` your changes to a branch you have created
+- `Push` your changes back up through your fork
+- Submit a `pull request` so that my team and I can review your changes.
 
-* Satisfies all of the above acceptance criteria plus the following:
+As a side note, when making changes, always merge or pull from the latest version to ensure you are working on the most up to date version of the application. 
 
-  * Uses IndexedDB to create an object store and includes both GET and PUT methods
+## Screenshots
+Here is a quick overview of the application's interface.
 
-  * The application works without an internet connection
+![online-text-editor](https://github.com/Blossomswilts/online-text-editor/assets/117021869/c1b2f62f-e1c1-4f0d-a7f9-89823d881ee3)
 
-  * Automatically saves content inside the text editor when the DOM window is unfocused
 
-  * Bundled with webpack
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
-  * Create a service worker with workbox that Caches static assets
+## Questions
+If you have any questions, or would like to show off some of your work, don't hesitate to message me through any of the following contacts!
 
-  * The application should use babel in order to use async / await
+GitHub: [Blossomswilts](https://github.com/Blossomswilts)
+(ctrl+click to follow link, where you can see this user's repositories and profile)
+    
 
-  * Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
-
-  * Can be installed as a Progressive Web Application
+Email: michael.r.tranquillo@gmail.com
+(ctrl+click to send email to this address with your default email client or copy and paste address into your email client)
